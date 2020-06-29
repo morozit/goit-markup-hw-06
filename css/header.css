@@ -106,6 +106,8 @@ padding: 80px;
 
 .nav-item:hover .portfolio-submenu {
     display: block;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
 }
 
 
@@ -170,15 +172,32 @@ padding: 80px;
     transform: scaleX(1);
 }
 
-.portfolio-submenu:hover .submenu-all {
+.portfolio-submenu .submenu-item-1:hover .submenu-all {
     display: block;
     transform: scaleX(1);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
+/* .submenu-item-1 {
+    position: absolute;
+    top: 100%;
+    left: 0;    
+
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none;
+    
+    background-color: rgba(33, 150, 243, 0.9);
+
+    display: none;
+    text-decoration: none;
+} */
 
 .submenu-all {
     position: absolute;
-    top: -10px;
-    left: 118%;    
+    top:0px;
+    left: 100%;    
 
     width: 100%;
     padding: 10px 10px;
