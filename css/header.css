@@ -177,11 +177,11 @@ padding: 80px;
 
 .submenu-all {
     position: absolute;
-    top: -6px;
+    top: -10px;
     left: 118%;    
 
     width: 100%;
-    padding: 6px 10px;
+    padding: 10px 10px;
     margin: 0;
     list-style: none;
     
