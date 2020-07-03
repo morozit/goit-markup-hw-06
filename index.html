@@ -58,7 +58,7 @@
             эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <a href="./popup.html" class="button-hero">Заказать услугу</a>
+          <button class="button-hero" data-open-modal>Заказать услугу</button>
         </div>
       </section>
       <!--блок особенности компании-->
@@ -515,72 +515,78 @@
     </footer>
 
     <!-- popup ЗАКАЗАТЬ -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="popup">
-        <button>
-          <svg class="input-icon" hight="11px" width="11px">
+        <button class="close-popup" data-close-modal>
+          <svg class="icon-close" height="18px" width="18px">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <!--  -->
+        <!--  -->
         <form>
           <b>Оставьте свои данные, мы вам перезвоним</b>
-          <div class="form-line">
-            <label for="name" class="form-label">Имя</label>
-            <svg class="input-icon" hight="12px" width="12px">
+          <label class="form-label">
+            <input type="text" name="name" placeholder=" " class="form-field" />
+            <span class="label-name">Имя</span>
+            <svg class="input-icon" height="12px" width="12px">
               <use href="./images/sprite.svg#name"></use>
             </svg>
+          </label>
+          <label class="form-label">
             <input
+              type="tel"
+              name="telephone"
+              placeholder=" "
               class="form-field"
-              type="text"
-              name="name"
-              id="name"
-              autofocus
             />
-          </div>
-          <div class="form-line">
-            <label for="tel" class="form-label">Телефон</label>
-            <svg class="input-icon" hight="13px" width="13px">
+            <span class="label-name">Телефон</span>
+            <svg class="input-icon" height="13px" width="13px">
               <use href="./images/sprite.svg#tel-popup"></use>
             </svg>
+          </label>
+          <label class="form-label">
             <input
+              type="email"
+              name="mail"
+              placeholder=" "
               class="form-field"
-              type="tel"
-              name="tel"
-              id="tel"
-              autofocus
             />
-          </div>
-          <div class="form-line">
-            <label for="mail" class="form-label">Почта</label>
-            <svg class="input-icon" hight="12px" width="15px">
+            <span class="label-name">Почта</span>
+            <svg class="input-icon" height="12px" width="15px">
               <use href="./images/sprite.svg#mail-popup"></use>
             </svg>
-            <input
-              class="form-field"
-              type="mail"
-              name="mail"
-              id="mail"
-              autofocus
-            />
-          </div>
-          <div class="form-line">
-            <label for="comment" class="form-label">Комментарий</label>
+          </label>
+          <!--  -->
+          <!--  -->
+          <div class="comment-label">
             <textarea
-              class="form-field"
+              class="comment-field"
               name="comment"
-              id="comment"
-              rows="8"
+              rows="6"
+              placeholder=" "
             ></textarea>
+            <span class="comment-name">Комментарий</span>
           </div>
-          <div class="form-line">
-            <input class="form-field" type="checkbox" name="policy" />
-            <label for="policy" class="form-label"
+          <!--  -->
+          <label class="checkbox-label">
+            <input
+              class="checkbox invisible"
+              type="checkbox"
+              name="agreement"
+            />
+            <span class="checkbox-icon"></span>
+            <span class="check-text"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="./policy-privacy.html">Условия договора</a></label
+              <a href="#">Условия договора</a></span
             >
-          </div>
+          </label>
+          <!--  -->
+          <button type="submit" class="popup-send">Отправить</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
