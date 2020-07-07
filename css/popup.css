@@ -2,9 +2,13 @@
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 165, 0, 0.5);
+
+  background-color: var(--bg-popup-zakaz);
+  opacity: 1;
+  /* transition: opacity var(--timing-animation); */
 }
 
 .backdrop.is-hidden {
@@ -12,15 +16,215 @@
   pointer-events: none;
 }
 
-.modal {
+.popup {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-height: 300px;
-  min-width: 400px;
-  padding: 15px;
+  width: 530px;
+  height: 580px;
+  padding: 40px;
 
-  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: var(--primary-white-color);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Кнопка закрытия модалки */
+.close-popup {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 6px 6px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: var(--primary-white-color);
+  transition: border var(--timing-animation);
+}
+.icon-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  box-sizing: border-box;
+  fill: var(--popup-icon);
+  transition: fill var(--timing-animation);
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.close-popup:hover .input-close,
+.close-popup:focus .input-close {
+  fill: var(--accent-color);
+}
+
+/* Форма */
+
+.popup b {
+  display: block;
+  margin-bottom: 30px;
+  /* font-family: Roboto; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--text-title-color);
+  cursor: default;
+  letter-spacing: 0.03em;
+}
+
+.form-label {
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.label-name {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+
+  transition: opacity var(--timing-animation), translate var(--timing-animation),
+    color var(--timing-animation), top var(--timing-animation),
+    left var(--timing-animation);
+}
+
+.form-label:hover .label-name,
+.form-label:focus .label-name {
+  color: var(--accent-color);
+  top: -12px;
+  left: 16px;
+}
+
+/* .form-label:hover .form-field,
+.form-label:focus .form-field {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.form-field:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+} */
+
+.form-label:hover .input-icon,
+.form-label:focus .input-icon {
+  fill: var(--accent-color);
+}
+
+.form-field {
+  /* position: relative; */
+  display: inline-block;
+  padding-left: 42px;
+  width: 100%;
+  padding: 12px 10px 12px 45px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border var(--timing-animation);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  fill: var(--text-title-color);
+  transition: fill var(--timing-animation);
+}
+
+.form-label input {
+  width: 100%;
+  margin: 0;
+  padding: 14px 42px;
+
+  /* border: 1px solid var(--accent-color); */
+}
+
+.popup-send {
+  --h: 50px;
+  min-width: 200px;
+  height: var(--h);
+  line-height: var(--h);
+  padding: 0px 32px;
+
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  transition: box-shadow 250ms var(--time-function);
+}
+
+.popup-send:hover,
+.popup-send:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popup-send:active {
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.comment-field {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+/* .comment-field textarea {
+  width: 100%;
+  margin: 0;
+  padding: 14px 42px;
+} */
+
+.checkbox {
+  display: inline-block;
+  margin-bottom: 30px;
 }

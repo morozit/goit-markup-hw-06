@@ -3,88 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Модальное окно</title>
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/04-modal.css" />
+    <title>popup</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
   </head>
   <body>
-    <a href="/index.html">Назад на главную</a>
+    <section class="container">
+      <a href="./header-fixed.html">Назад на главную</a>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
-      veniam sit accusantium porro dolorum, similique cumque unde atque eaque
-      eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
-      eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
-      consequuntur possimus libero fugit itaque odit ad, officia quisquam.
-      Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
-      corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
-      Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
-      non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
-      corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
-      aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
-      eligendi, temporibus, consequatur excepturi illum natus iusto culpa
-      beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
-      obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
-      repellat provident. Nam ratione nihil rerum quos eaque itaque autem
-      eveniet deserunt, dicta similique consequuntur a consectetur tempora
-      dolorem eius repudiandae iusto temporibus totam omnis!
-    </p>
-    
-    <button data-open-modal>Открыть модалку</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        laboriosam veniam sit accusantium porro dolorum, similique cumque unde
+        atque eaque eos aliquid necessitatibus dolor temporibus pariatur
+        voluptas recusandae eligendi voluptatem qui facilis maiores alias
+        beatae. Rem aliquid consequuntur possimus libero fugit itaque odit ad,
+        officia quisquam. Perferendis corporis mollitia earum, sequi sint
+        officiis nobis, numquam corrupti ipsum expedita, tempore quis maiores
+        dicta quia beatae? Necessitatibus culpa, deserunt ea dignissimos sequi
+        exercitationem facere non dolores distinctio, reprehenderit iure eveniet
+        veritatis accusamus corrupti quod reiciendis magnam neque earum, fugit
+        obcaecati praesentium aperiam doloribus veniam modi! Reiciendis vel
+        voluptate qui autem pariatur eligendi, temporibus, consequatur excepturi
+        illum natus iusto culpa beatae, nostrum corporis provident nemo soluta
+        quas minima! Fugit sapiente obcaecati impedit asperiores reiciendis
+        deleniti repudiandae quidem vitae, repellat provident. Nam ratione nihil
+        rerum quos eaque itaque autem eveniet deserunt, dicta similique
+        consequuntur a consectetur tempora dolorem eius repudiandae iusto
+        temporibus totam omnis!
+      </p>
+      <button class="button-hero" data-open-modal>Заказать услугу</button>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
-      veniam sit accusantium porro dolorum, similique cumque unde atque eaque
-      eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
-      eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
-      consequuntur possimus libero fugit itaque odit ad, officia quisquam.
-      Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
-      corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
-      Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
-      non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
-      corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
-      aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
-      eligendi, temporibus, consequatur excepturi illum natus iusto culpa
-      beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
-      obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
-      repellat provident. Nam ratione nihil rerum quos eaque itaque autem
-      eveniet deserunt, dicta similique consequuntur a consectetur tempora
-      dolorem eius repudiandae iusto temporibus totam omnis!
-    </p>
-
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        laboriosam veniam sit accusantium porro dolorum, similique cumque unde
+        atque eaque eos aliquid necessitatibus dolor temporibus pariatur
+        voluptas recusandae eligendi voluptatem qui facilis maiores alias
+        beatae. Rem aliquid consequuntur possimus libero fugit itaque odit ad,
+        officia quisquam. Perferendis corporis mollitia earum, sequi sint
+        officiis nobis, numquam corrupti ipsum expedita, tempore quis maiores
+        dicta quia beatae? Necessitatibus culpa, deserunt ea dignissimos sequi
+        exercitationem facere non dolores distinctio, reprehenderit iure eveniet
+        veritatis accusamus corrupti quod reiciendis magnam neque earum, fugit
+        obcaecati praesentium aperiam doloribus veniam modi! Reiciendis vel
+        voluptate qui autem pariatur eligendi, temporibus, consequatur excepturi
+        illum natus iusto culpa beatae, nostrum corporis provident nemo soluta
+        quas minima! Fugit sapiente obcaecati impedit asperiores reiciendis
+        deleniti repudiandae quidem vitae, repellat provident. Nam ratione nihil
+        rerum quos eaque itaque autem eveniet deserunt, dicta similique
+        consequuntur a consectetur tempora dolorem eius repudiandae iusto
+        temporibus totam omnis!
+      </p>
+    </section>
     <div class="backdrop is-hidden" data-backdrop>
-      <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-          debitis quibusdam doloremque perspiciatis distinctio consequuntur
-          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-          iusto eius aut facilis doloribus aliquam quae vitae dolor
-          voluptatibus? Accusamus corrupti cumque odio illo.
-        </p>
-        <button data-close-modal>Закрыть</button>
+      <div class="popup">
+        <button class="close-popup" data-close-modal>
+          <svg class="input-close" height="18px" width="18px">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form>
+          <b>Оставьте свои данные, мы вам перезвоним</b>
+          <label class="form-label">
+            <svg class="input-icon" height="12px" width="12px">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+            <span class="label-name">Имя</span>
+            <input type="text" name="name" class="form-field" />
+          </label>
+          <label class="form-label">
+            <svg class="input-icon" height="13px" width="13px">
+              <use href="./images/sprite.svg#tel-popup"></use>
+            </svg>
+            <span class="label-name">Телефон</span>
+            <input type="tel" name="telephone" class="form-field" />
+          </label>
+          <label class="form-label">
+            <svg class="input-icon" height="12px" width="15px">
+              <use href="./images/sprite.svg#mail-popup"></use>
+            </svg>
+            <span class="label-name">Почта</span>
+            <input type="email" name="mail" class="form-field" />
+          </label>
+          <textarea
+            class="comment-field"
+            name="comment"
+            rows="6"
+            placeholder="Комментарий"
+          ></textarea>
+          <label class="checkbox">
+            <input type="checkbox" name="policy" />
+            Соглашаюсь с рассылкой и принимаю
+            <a href="./policy-privacy.html">Условия договора</a>
+          </label>
+          <!-- <button type="submit" class="popup-send">Отправить</button> -->
+        </form>
+        <button type="submit" class="popup-send">Отправить</button>
       </div>
     </div>
 
-    <script>
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
+    <script src="./js/modal.js"></script>
 
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Это клик в бекдроп");
-      }
-    </script>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <form class="form js-modal-form">
+          <b class="call-of-form">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="label">
+            <input type="text" name="name" class="form-field" placeholder=" " />
+            <span class="label-name">Имя</span>
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </label>
+          <label class="label">
+            <input type="tel" name="tel" class="form-field" placeholder=" " />
+            <span class="label-name">Телефон</span>
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </label>
+          <label class="label">
+            <input
+              type="email"
+              name="mail"
+              class="form-field"
+              placeholder=" "
+            />
+            <span class="label-name">Почта</span>
+            <svg class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </label>
+          <textarea
+            name="comment"
+            class="comment"
+            rows="6"
+            placeholder="Комментарий"
+          ></textarea>
+          <label class="checkbox-label">
+            <input
+              class="checkbox invisible"
+              type="checkbox"
+              name="agreement"
+            />
+            <span class="checkbox-icon"></span>
+            <span class="check-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a></span
+            >
+          </label>
+          <button class="send" type="submit">Отправить</button>
+        </form>
+        <button class="close-modal" data-close-modal>
+          <svg class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
