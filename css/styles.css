@@ -4,6 +4,9 @@
 /* акцент #2196f3; */
 /* цвет фона #FFFFFF;  */
 /* вторичный цвет фона #F5F5F5; */
+/* ! */
+/* TODO */
+/* ? */
 
 :root {
   --text-title-color: #212121;
@@ -825,7 +828,8 @@ footer b {
   color: #212121;
   padding-top: 24px;
   padding-bottom: 4px;
-  padding-left: 20px;
+  padding-left: 24px;
+  padding-right: 20px;
 }
 
 .project-category {
@@ -834,6 +838,7 @@ footer b {
   line-height: 1.87;
   letter-spacing: 0.03em;
   padding-left: 24px;
+  padding-right: 20px;
   color: #757575;
 }
 
