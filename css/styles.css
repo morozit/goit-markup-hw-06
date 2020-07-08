@@ -165,7 +165,7 @@ p {
 
   text-decoration: none;
 
-  color: var(--text-title-color);
+  color: var(--primary-text-color);
   fill: var(--primary-logo-color);
   transition: color var(--timing-animation), fill var(--timing-animation);
 }
@@ -219,10 +219,6 @@ p {
   color: var(--accent-color);
 }
 
-.address-nav .link {
-  color: var(--primary-text-color);
-}
-
 .address-nav .icon {
   margin-right: 10px;
 }
@@ -234,11 +230,7 @@ p {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
     url("../images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -383,8 +375,7 @@ p {
   padding-bottom: 24px;
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list {
@@ -436,8 +427,7 @@ p {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  transition: background-color var(--timing-animation),
-    fill var(--timing-animation);
+  transition: background-color var(--timing-animation), fill var(--timing-animation);
 }
 
 .team-social:hover,
@@ -476,8 +466,7 @@ p {
   width: 170px;
   height: 90px;
 
-  transition: background-color var(--timing-animation),
-    border var(--timing-animation), fill var(--timing-animation);
+  transition: background-color var(--timing-animation), border var(--timing-animation), fill var(--timing-animation);
 }
 
 .client-logo:hover,
@@ -536,16 +525,15 @@ button {
   border: none;
   outline: none;
 
-  transition: color var(--timing-animation),
-    background-color var(--timing-animation), box-shadow var(--timing-animation);
+  transition: color var(--timing-animation), background-color var(--timing-animation),
+    box-shadow var(--timing-animation);
 }
 
 .button.portfolio-filter:hover,
 .button.portfolio-filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .button-hero {
@@ -852,8 +840,7 @@ footer b {
 
 .project .item:hover,
 .project .item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /* POPUP */
@@ -894,8 +881,7 @@ footer b {
 
   background: var(--primary-white-color);
   box-sizing: border-box;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   text-align: center;
 
@@ -1007,8 +993,8 @@ footer b {
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 
-  transition: transform var(--timing-animation), top var(--timing-animation),
-    left var(--timing-animation), color var(--timing-animation);
+  transition: transform var(--timing-animation), top var(--timing-animation), left var(--timing-animation),
+    color var(--timing-animation);
 }
 .form-field:focus + .label-name,
 .form-field:not(:placeholder-shown) + .label-name {
@@ -1074,8 +1060,8 @@ footer b {
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 
-  transition: transform var(--timing-animation), top var(--timing-animation),
-    left var(--timing-animation), color var(--timing-animation);
+  transition: transform var(--timing-animation), top var(--timing-animation), left var(--timing-animation),
+    color var(--timing-animation);
 }
 .comment-field:focus + .comment-name,
 .comment-field:not(:placeholder-shown) + .comment-name {
